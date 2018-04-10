@@ -1,0 +1,20 @@
+{
+  "name": "thelounge-theme-zenburn",
+  "version": "1.0.0",
+  "main": "package.json",
+  "thelounge": {
+    "name": "Zenburn",
+    "type": "theme",
+    "css": "zenburn.css"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/thelounge/thelounge-theme-zenburn#readme",
+  "repository": "https://github.com/thelounge/thelounge-theme-zenburn",
+  "keywords": [
+    "thelounge",
+    "thelounge-theme"
+  ],
+  "bugs": {
+    "url": "https://github.com/thelounge/thelounge-theme-zenburn/issues"
+  }
+}
