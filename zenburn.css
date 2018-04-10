@@ -19,53 +19,53 @@ QUIT #bc6c4c
 */
 
 body {
-	background: #2b2b2b;
-	color: #dcdccc;
+  background: #2b2b2b;
+  color: #dcdccc;
 }
 
 .logo {
-	display: none;
+  display: none;
 }
 
 .logo-inverted {
-	display: inline-block;
+  display: inline-block;
 }
 
 #main,
 #chat .userlist,
 #windows .chan,
 #windows .window {
-	background: #3f3f3f;
+  background: #3f3f3f;
 }
 
 #settings,
 #sign-in,
 #connect .title {
-	color: #88b090;
+  color: #88b090;
 }
 
 #settings,
 #sign-in,
 #connect .opt {
-	color: #dcdccc;
+  color: #dcdccc;
 }
 
 #sidebar {
-	background: #2b2b2b;
+  background: #2b2b2b;
 }
 
 #footer {
-	background: #333;
-	border-top: 1px solid #000;
+  background: #333;
+  border-top: 1px solid #000;
 }
 
 #chat .userlist .count {
-	background-color: #434443;
+  background-color: #434443;
 }
 
 #chat .userlist .search {
-	color: #88b090;
-	padding: 15px 16px;
+  color: #88b090;
+  padding: 15px 16px;
 }
 
 /* Borders */
@@ -73,21 +73,21 @@ body {
 #windows .header,
 #chat .user-mode::before,
 #chat .userlist {
-	border-color: #333;
+  border-color: #333;
 }
 
 /* User list */
 #chat .user-mode {
-	color: #dcdccc;
+  color: #dcdccc;
 }
 
 #chat .userlist .user.active {
-	background-color: #333;
+  background-color: #333;
 }
 
 /* Nicknames */
 #chat .user {
-	color: #bc8cbc;
+  color: #bc8cbc;
 }
 
 #chat.colored-nicks .user.color-1 { color: #f7adf7; }
@@ -124,7 +124,7 @@ body {
 #chat.colored-nicks .user.color-32 { color: #85f27d; }
 
 #chat a {
-	color: #8c8cbc;
+  color: #8c8cbc;
 }
 
 /* Increase contrast of some IRC colors */
@@ -134,69 +134,73 @@ body {
 
 /* Message form */
 #form {
-	background: #333;
-	border-color: #101010;
+  background: #333;
+  border-color: #101010;
 }
 
 #windows #form .input {
-	background-color: #434443 !important;
-	border-color: #101010 !important;
-	color: #dcdccc !important;
+  background-color: #434443 !important;
+  border-color: #101010 !important;
+  color: #dcdccc !important;
 }
 
 #form #nick {
-	background: #101010;
-	color: #dcdccc;
+  background: #101010;
+  color: #dcdccc;
 }
 
 #form #submit:hover {
-	opacity: 1;
+  opacity: 1;
 }
 
 /* Buttons */
 #chat .show-more-button {
-	background: #434443;
-	border-color: #101010;
-	color: #dcdccc;
+  background: #434443;
+  border-color: #101010;
+  color: #dcdccc;
 }
 
 #chat .show-more-button:hover {
-	color: #fff;
+  color: #fff;
 }
 
 #chat .header {
-	color: #d2d39b;
+  color: #d2d39b;
 }
 
 /* Notification dot on the top right corner of the menu icon */
 #viewport .lt::after {
-	border-color: #3f3f3f;
+  border-color: #3f3f3f;
 }
 
 #chat .unread-marker-text::before {
-	background-color: #3f3f3f;
+  background-color: #3f3f3f;
 }
 
 #chat .date-marker::before {
-	border-color: #97ea70;
+  border-color: #97ea70;
 }
 
 #chat .date-marker-text::before {
-	background-color: #3f3f3f;
-	color: #97ea70;
+  background-color: #3f3f3f;
+  color: #97ea70;
 }
 
 /* Setup text colors */
 #chat .msg {
-	color: #ffcfaf;
+  color: #ffcfaf;
 }
 
 #chat .message {
-	color: #dcdccc;
+  color: #dcdccc;
 }
 
 #chat .self .text {
-	color: #d2d39b;
+  color: #d2d39b;
+}
+
+#chat .unhandled .from {
+  color: #aaa;
 }
 
 #chat .error,
@@ -204,72 +208,68 @@ body {
 #chat .channel .highlight,
 #chat .channel .highlight .from,
 #chat .channel .highlight .text {
-	color: #bc6c4c;
-}
-
-#chat .unhandled .from {
-	color: #aaa;
+  color: #bc6c4c;
 }
 
 #chat .msg.quit .time,
 #chat .msg.quit .from button {
-	color: #bc6c9c !important;
+  color: #bc6c9c !important;
 }
 
 #chat .msg.topic {
-	color: #dcdccc;
+  color: #dcdccc;
 }
 
 #chat .msg.join .time,
 #chat .msg.join .from button {
-	color: #8cd0d3 !important;
+  color: #8cd0d3 !important;
 }
 
 #chat table.channel-list td {
-	color: #ccc;
+  color: #ccc;
 }
 
 code,
 .irc-monospace {
-	background: #333;
-	color: #dcdccc;
+  background: #333;
+  color: #dcdccc;
 }
 
 kbd {
-	color: #eee;
-	text-shadow: 0 -1px 0 #000;
-	border-color: #000;
-	background-color: #333;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.25), transparent);
-	box-shadow: 0 2px 0 #000, inset 0 1px 1px #777, inset 0 -1px 3px #222;
+  color: #eee;
+  text-shadow: 0 -1px 0 #000;
+  border-color: #000;
+  background-color: #333;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), transparent);
+  box-shadow: 0 2px 0 #000, inset 0 1px 1px #777, inset 0 -1px 3px #222;
 }
 
 /* Previews */
 
 #chat .toggle-content {
-	background: #333;
-	color: #dcdccc;
+  background: #333;
+  color: #dcdccc;
 }
 
 #chat .toggle-content .body {
-	color: #d2d39b;
+  color: #d2d39b;
 }
 
 /* Form elements */
 
 #chat-container ::-moz-placeholder {
-	color: #d2d39b;
-	opacity: 0.5;
+  color: #d2d39b;
+  opacity: 0.5;
 }
 
 #chat-container ::-webkit-input-placeholder {
-	color: #d2d39b;
-	opacity: 0.5;
+  color: #d2d39b;
+  opacity: 0.5;
 }
 
 #chat-container :-ms-input-placeholder {
-	color: #d2d39b;
-	opacity: 0.5;
+  color: #d2d39b;
+  opacity: 0.5;
 }
 
 /* End form elements */
