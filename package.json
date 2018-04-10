@@ -1,0 +1,28 @@
+{
+  "name": "thelounge-theme-zenburn",
+  "version": "1.0.0",
+  "description": "Dark & low-contrast theme based on the Vim's Zenburn color scheme",
+  "main": "package.json",
+  "thelounge": {
+    "name": "Zenburn",
+    "type": "theme",
+    "css": "zenburn.css"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/thelounge/thelounge-theme-zenburn#readme",
+  "repository": "https://github.com/thelounge/thelounge-theme-zenburn",
+  "keywords": [
+    "thelounge",
+    "thelounge-theme"
+  ],
+  "bugs": {
+    "url": "https://github.com/thelounge/thelounge-theme-zenburn/issues"
+  },
+  "devDependencies": {
+    "stylelint": "~9.2.0",
+    "stylelint-config-standard": "~18.2.0"
+  },
+  "scripts": {
+    "test": "stylelint zenburn.css"
+  }
+}
