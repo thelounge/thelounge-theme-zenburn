@@ -18,6 +18,10 @@ BORDERS #333333
 QUIT #bc6c4c
 */
 
+:root {
+  --link-color: #8c8cbc;
+}
+
 body {
   background: #2b2b2b;
   color: #dcdccc;
@@ -122,10 +126,6 @@ body {
 #chat.colored-nicks .user.color-30 { color: #b49eea; }
 #chat.colored-nicks .user.color-31 { color: #f2a4eb; }
 #chat.colored-nicks .user.color-32 { color: #85f27d; }
-
-#chat a {
-  color: #8c8cbc;
-}
 
 /* Increase contrast of some IRC colors */
 .irc-fg2 { color: #1b94ff; }
