@@ -58,6 +58,12 @@ body {
   background: #2b2b2b;
 }
 
+#sidebar .active, #sidebar .active:hover {
+    background-color: transparent;
+}
+#windows #chat .header {
+    border-bottom: 1px solid #333333;
+}
 #footer {
   background: #333;
   border-top: 1px solid #000;
@@ -127,6 +133,10 @@ body {
 #chat.colored-nicks .user.color-31 { color: #f2a4eb; }
 #chat.colored-nicks .user.color-32 { color: #85f27d; }
 
+#chat a {
+  color: #8c8cbc;
+}
+
 /* Increase contrast of some IRC colors */
 .irc-fg2 { color: #1b94ff; }
 .irc-fg5 { color: #e969a7; }
@@ -164,8 +174,14 @@ body {
   color: #fff;
 }
 
+#windows #chat .header,
 #chat .header {
   color: #d2d39b;
+}
+
+.header button,
+#form #submit {
+  color: #CCCCCC !important;
 }
 
 /* Notification dot on the top right corner of the menu icon */
