@@ -58,12 +58,11 @@ body {
   background: #2b2b2b;
 }
 
-#sidebar .active, #sidebar .active:hover {
-    background-color: transparent;
+#sidebar .active,
+#sidebar .active:hover {
+  background-color: transparent;
 }
-#windows #chat .header {
-    border-bottom: 1px solid #333333;
-}
+
 #footer {
   background: #333;
   border-top: 1px solid #000;
@@ -81,6 +80,7 @@ body {
 /* Borders */
 #chat .content,
 #windows .header,
+#windows #chat .header,
 #chat .user-mode::before,
 #chat .userlist {
   border-color: #333;
@@ -159,10 +159,6 @@ body {
   color: #dcdccc;
 }
 
-#form #submit:hover {
-  opacity: 1;
-}
-
 /* Buttons */
 #chat .show-more-button {
   background: #434443;
@@ -174,14 +170,17 @@ body {
   color: #fff;
 }
 
-#windows #chat .header,
-#chat .header {
-  color: #d2d39b;
+#windows #chat .header {
+  color: #d2d39b !important;
 }
 
-.header button,
-#form #submit {
-  color: #CCCCCC !important;
+#form #submit,
+.header button {
+  color: #ccc !important;
+}
+
+#form #submit:hover {
+  opacity: 1;
 }
 
 /* Notification dot on the top right corner of the menu icon */
