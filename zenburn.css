@@ -262,6 +262,10 @@ kbd {
   color: #f37e69;
 }
 
+#chat .nick .from::before {
+  color: #97ea70;
+}
+
 /* Previews */
 
 #chat .toggle-content {
