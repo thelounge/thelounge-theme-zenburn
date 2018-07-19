@@ -253,6 +253,15 @@ kbd {
   background: #333;
 }
 
+#chat .join .from::before {
+  color: #97ea70;
+}
+
+#chat .part .from::before,
+#chat .quit .from::before {
+  color: #f37e69;
+}
+
 /* Previews */
 
 #chat .toggle-content {
