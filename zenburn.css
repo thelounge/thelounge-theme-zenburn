@@ -154,6 +154,10 @@ body {
   color: var(--body-color) !important;
 }
 
+#upload-progressbar {
+  background: #84ce88;
+}
+
 #form #nick {
   background: #101010;
   color: var(--body-color);
@@ -175,6 +179,7 @@ body {
 }
 
 #form #submit,
+#form #upload,
 .header button {
   color: #ccc !important;
 }
@@ -253,6 +258,7 @@ kbd {
   background: #333;
 }
 
+#chat .topic .from::before,
 #chat .join .from::before {
   color: #97ea70;
 }
