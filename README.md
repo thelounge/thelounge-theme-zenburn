@@ -1,11 +1,3 @@
----
-
-<h3 align="center">
-  ⚠️ Zenburn is currently looking for maintainers. ⚠️<br>
-</h3>
-
----
-
 <h1 align="center">
 	Zenburn theme for The Lounge
 </h1>
