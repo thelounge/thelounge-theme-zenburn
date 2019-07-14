@@ -199,7 +199,7 @@ body {
   color: var(--body-color);
 }
 
-#chat .self .text {
+#chat .self .content {
   color: #d2d39b;
 }
 
