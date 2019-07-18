@@ -199,7 +199,7 @@ body {
   color: var(--body-color);
 }
 
-#chat .self .text {
+#chat .self .content {
   color: #d2d39b;
 }
 
@@ -208,7 +208,7 @@ body {
 }
 
 #chat .notice .time,
-#chat .notice .text,
+#chat .notice .content,
 #chat .chan .notice .user {
   color: #bde0f3 !important;
 }
@@ -254,7 +254,7 @@ kbd {
   box-shadow: 0 2px 0 #000, inset 0 1px 1px #777, inset 0 -1px 3px #222;
 }
 
-#chat .msg.motd .text {
+#chat .msg.motd .content {
   background: #333;
 }
 
