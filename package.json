@@ -19,8 +19,8 @@
     "url": "https://github.com/thelounge/thelounge-theme-zenburn/issues"
   },
   "devDependencies": {
-    "stylelint": "~9.2.0",
-    "stylelint-config-standard": "~18.2.0"
+    "stylelint": "^10.1.0",
+    "stylelint-config-standard": "^18.3.0"
   },
   "scripts": {
     "test": "stylelint zenburn.css"
