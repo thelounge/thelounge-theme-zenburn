@@ -26,11 +26,17 @@ QUIT #bc6c4c
   --date-marker-color: #97ea70;
   --highlight-bg-color: #2b2b2b;
   --highlight-border-color: #6f6f6f;
+  --scrollbar-background: transparent;
+  --scrollbar-handle: rgba(120, 120, 120, 0.4);
 }
 
 body {
   background: #2b2b2b;
   color: var(--body-color);
+}
+
+* {
+  scrollbar-color: var(--scrollbar-handle) var(--scrollbar-background);
 }
 
 #loading .logo,
@@ -239,6 +245,11 @@ body {
   color: #ccc;
 }
 
+#viewport #chat table td,
+#viewport #chat table th {
+  border-bottom-color: rgba(51, 51, 51);
+}
+
 code,
 .irc-monospace {
   background: #333;
@@ -256,6 +267,10 @@ kbd {
 
 #chat .msg.motd .content {
   background: #333;
+}
+
+#chat .msg.motd .text {
+  background: transparent;
 }
 
 #chat .topic .from::before,
@@ -317,8 +332,7 @@ kbd {
 }
 
 #chat .userlist .user.active,
-.context-menu-item:focus,
-.context-menu-item:hover,
+.context-menu-item.active,
 .textcomplete-item:focus,
 .textcomplete-item:hover,
 .textcomplete-menu .active {
