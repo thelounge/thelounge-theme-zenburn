@@ -30,13 +30,13 @@ QUIT #bc6c4c
   --scrollbar-handle: rgba(120, 120, 120, 0.4);
 }
 
+html {
+  scrollbar-color: var(--scrollbar-handle) var(--scrollbar-background);
+}
+
 body {
   background: #2b2b2b;
   color: var(--body-color);
-}
-
-* {
-  scrollbar-color: var(--scrollbar-handle) var(--scrollbar-background);
 }
 
 #loading .logo,
