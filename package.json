@@ -1,6 +1,6 @@
 {
   "name": "thelounge-theme-zenburn",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Dark & low-contrast theme for The Lounge, based on the Vim's Zenburn color scheme",
   "main": "package.json",
   "thelounge": {
