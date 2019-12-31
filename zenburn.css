@@ -26,12 +26,12 @@ QUIT #bc6c4c
   --date-marker-color: #97ea70;
   --highlight-bg-color: #2b2b2b;
   --highlight-border-color: #6f6f6f;
-  --scrollbar-background: transparent;
-  --scrollbar-handle: rgba(120, 120, 120, 0.4);
+  --scrollbar-track: transparent;
+  --scrollbar-thumb: rgba(120, 120, 120, 0.4);
 }
 
 html {
-  scrollbar-color: var(--scrollbar-handle) var(--scrollbar-background);
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
 }
 
 body {
@@ -65,11 +65,11 @@ body {
   background: #2b2b2b;
 }
 
-#sidebar .chan.active {
+#sidebar .channel-list-item.active {
   background-color: #333 !important;
 }
 
-#sidebar .chan:hover {
+#sidebar .channel-list-item:hover {
   background-color: rgba(51, 51, 51, 0.5); /* Same as #333 but with opacity */
 }
 
@@ -90,7 +90,7 @@ body {
 /* Borders */
 #chat .content,
 #windows .header,
-#windows #chat .header,
+#chat .header,
 #chat .user-mode::before,
 #chat .userlist {
   border-color: #333;
@@ -213,31 +213,31 @@ body {
   color: #aaa;
 }
 
-#chat .notice .time,
-#chat .notice .content,
-#chat .chan .notice .user {
+#chat .msg[data-type="notice"] .time,
+#chat .msg[data-type="notice"] .content,
+#chat .chat-view .msg[data-type="notice"] .user {
   color: #bde0f3 !important;
 }
 
-#chat .error,
-#chat .error .from,
-#chat .channel .highlight,
-#chat .channel .highlight .from,
-#chat .channel .highlight .text {
+#chat .msg[data-type="error"],
+#chat .msg[data-type="error"] .from,
+#chat .msg.highlight,
+#chat .msg.highlight .from,
+#chat .msg.highlight .text {
   color: #bc6c4c;
 }
 
-#chat .msg.quit .time,
-#chat .msg.quit .from button {
+#chat .msg[data-type="quit"] .time,
+#chat .msg[data-type="quit"] .from button {
   color: #bc6c9c !important;
 }
 
-#chat .msg.topic {
+#chat .msg[data-type="topic"] {
   color: var(--body-color);
 }
 
-#chat .msg.join .time,
-#chat .msg.join .from button {
+#chat .msg[data-type="join"] .time,
+#chat .msg[data-type="join"] .from button {
   color: #8cd0d3 !important;
 }
 
@@ -265,26 +265,21 @@ kbd {
   box-shadow: 0 2px 0 #000, inset 0 1px 1px #777, inset 0 -1px 3px #222;
 }
 
-#chat .msg.motd .content {
+#chat .msg[data-type="motd"] .text {
   background: #333;
 }
 
-#chat .msg.motd .text {
-  background: transparent;
-}
-
-#chat .topic .from::before,
-#chat .join .from::before {
+#chat .msg[data-type="topic"] .from::before,
+#chat .msg[data-type="mode"] .from::before,
+#chat .msg[data-type="nick"] .from::before,
+#chat .msg[data-type="join"] .from::before {
   color: #97ea70;
 }
 
-#chat .part .from::before,
-#chat .quit .from::before {
+#chat .msg[data-type="part"] .from::before,
+#chat .msg[data-type="kick"] .from::before,
+#chat .msg[data-type="quit"] .from::before {
   color: #f37e69;
-}
-
-#chat .nick .from::before {
-  color: #97ea70;
 }
 
 /* Previews */
@@ -332,7 +327,8 @@ kbd {
 }
 
 #chat .userlist .user.active,
-.context-menu-item.active,
+.context-menu-item:focus,
+.context-menu-item:hover,
 .textcomplete-item:focus,
 .textcomplete-item:hover,
 .textcomplete-menu .active {
