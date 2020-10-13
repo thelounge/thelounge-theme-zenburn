@@ -265,7 +265,8 @@ kbd {
   box-shadow: 0 2px 0 #000, inset 0 1px 1px #777, inset 0 -1px 3px #222;
 }
 
-#chat .msg[data-type="motd"] .text {
+#chat .msg[data-type="motd"] .text,
+#chat .msg[data-type="monospace_block"] .text {
   background: #333;
 }
 
